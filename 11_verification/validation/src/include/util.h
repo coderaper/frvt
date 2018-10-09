@@ -12,7 +12,7 @@
 #define UTIL_H_
 
 #include <iostream>
-#include "frvt11.h"
+#include "frvt_structs.h"
 
 #define SUCCESS 0
 #define FAILURE 1

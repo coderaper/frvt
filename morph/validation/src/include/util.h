@@ -13,7 +13,7 @@
 
 #include <iostream>
 #include <map>
-#include "frvt_morph.h"
+#include "frvt_structs.h"
 
 #define SUCCESS 0
 #define FAILURE 1
