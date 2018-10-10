@@ -12,7 +12,7 @@
 #define NULLIMPLFRVT1N_H_
 
 #include <map>
-#include "frvt1N.h"
+#include <frvt/frvt1N.h>
 
 /*
  * Declare the implementation class of the FRVT 1:1 Interface

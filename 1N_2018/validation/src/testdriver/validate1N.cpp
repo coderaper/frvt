@@ -14,8 +14,8 @@
 #include <sys/wait.h>
 #include <unistd.h>
 
-#include "frvt1N.h"
-#include "util.h"
+#include <frvt/frvt1N.h>
+#include <frvt/util.h>
 
 using namespace std;
 using namespace FRVT;

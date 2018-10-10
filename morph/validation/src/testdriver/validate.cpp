@@ -14,8 +14,8 @@
 #include <sys/wait.h>
 #include <unistd.h>
 
-#include "frvt_morph.h"
-#include "util.h"
+#include <frvt/frvt_morph.h>
+#include <frvt/util.h>
 
 using namespace std;
 using namespace FRVT_MORPH;

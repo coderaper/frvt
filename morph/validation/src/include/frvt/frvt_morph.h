@@ -16,7 +16,7 @@
 #include <string>
 #include <vector>
 
-#include "frvt_structs.h"
+#include <frvt/frvt_structs.h>
 
 namespace FRVT_MORPH {
 /**

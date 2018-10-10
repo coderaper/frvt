@@ -11,7 +11,7 @@
 #ifndef NULLIMPLFRVT11_H_
 #define NULLIMPLFRVT11_H_
 
-#include "frvt11.h"
+#include <frvt/frvt11.h>
 
 /*
  * Declare the implementation class of the FRVT 1:1 Interface

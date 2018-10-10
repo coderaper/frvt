@@ -12,7 +12,7 @@
 #include <limits>
 #include <fstream>
 
-#include "util.h"
+#include <frvt/util.h>
 
 using namespace std;
 using namespace FRVT;

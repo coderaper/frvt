@@ -11,7 +11,7 @@
 #ifndef NULLIMPLFRVTMORPH_H_
 #define NULLIMPLFRVTMORPH_H_
 
-#include "frvt_morph.h"
+#include <frvt/frvt_morph.h>
 
 /*
  * Declare the implementation class of the FRVT MORPH Interface
