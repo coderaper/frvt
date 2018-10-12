@@ -1,0 +1,33 @@
+# Config file for the frvt package
+# It defines the following variables
+#  frvt_INCLUDE_DIRS - include directories for frvt
+#  frvt_LIBRARIES    - libraries to link against
+
+set(frvt_VERSION "@frvt_VERSION@")
+set(frvt_VERSION_MAJOR "@frvt_VERSION_MAJOR@")
+set(frvt_VERSION_MINOR "@frvt_VERSION_MINOR@")
+set(frvt_VERSION_PATCH "@frvt_VERSION_PATCH@")
+
+
+@PACKAGE_INIT@
+
+set_and_check(frvt_INCLUDE_DIRS "@PACKAGE_INCLUDE_INSTALL_DIR@")
+set_and_check(frvt_LIB_DIR "@PACKAGE_LIB_INSTALL_DIR@")
+#set_and_check(frvt_BIN_DIR "@PACKAGE_BIN_INSTALL_DIR@")
+set_and_check(frvt_CMAKE_INSTALL_DIR "@PACKAGE_CMAKE_INSTALL_DIR@")
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+if( NOT TARGET frvt )
+  include( "${frvt_CMAKE_INSTALL_DIR}/frvtTargets.cmake" )
+endif()
+
+if( NOT TARGET frvt )
+ message( FATAL_ERROR "Target frvt was not imported!\n CMake will exit." )
+endif()
+
+
+## These are IMPORTED targets created by frvtTargets.cmake
+set( frvt_LIBRARIES frvt )
+
+check_required_components( frvt )
+
